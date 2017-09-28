@@ -1,4 +1,4 @@
-## 例1 交换i和j的内容
+## 例1 交换 i 和 j 的内容
 ```c
 #include<stdio.h>
 void swap(int *i, int *j);

@@ -1,16 +1,15 @@
 ## 例1 交换i和j的内容
 ```c
 #include<stdio.h>
-#pragma warning(disable:4996)
 void swap(int *i,int *j);
 int main()
 {
 	int i,j;
 	printf("输入i,j:");
-	scanf("%d %d",&i,&j);
+	scanf_s("%d %d",&i,&j);
 	printf("i=%d,j=%d\n",i,j);
 	printf("交换i,j后");
-	swap(i,j);
+	swap(&i,&j);
 	printf("输出i,j\ni=%d,j=%d\n",i,j);
 	return 0;
 }

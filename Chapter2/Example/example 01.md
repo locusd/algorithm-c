@@ -1,5 +1,5 @@
 ## 例1 交换i和j的内容
-```
+```c
 #include<stdio.h>
 void swap(int i,int j);
 int main()

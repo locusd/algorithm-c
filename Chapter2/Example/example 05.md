@@ -15,8 +15,8 @@ int main()
     {
         i++;
     }
-    if(i < 10) printf("k值放在数组a的第%d元素上",i + 1);
-    else printf("k 不在数组a上");
+    if(i < 10) printf("k值放在数组a的第%d元素上\n",i + 1);
+    else printf("k不在数组a上");
     return 0; 
 }
 ```

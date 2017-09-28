@@ -7,7 +7,7 @@ int main()
 	int i,j;
 	printf("输入i,j:");
 	scanf("%d %d",i,j);
-	printf("i=%d,j=%d\n",i,j);
+	printf("i=%d,j=%d\n",&i,&j);
 	printf("交换i,j\n");
 	swap(i,j);
 	printf("输出i,j\ni=%d,j=%d\n",i,j);

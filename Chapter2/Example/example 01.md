@@ -13,7 +13,8 @@ int main()
 	printf("输出i, j\ni = %d, j = %d\n", i, j);
 	return 0;
 }
-void swap(int *i, int *j){
+void swap(int *i, int *j)
+{
  	int temp;
 	temp = *i;
 	*i = *j;

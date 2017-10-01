@@ -27,6 +27,38 @@ int main()
 		}
 		sum = sum + sign / frac;
 	}
-	printf("当n = %d时，公式结果为：%f\n", n, sum);
+	printf("当n = %d时，公式结果为：%.10f\n", n, sum);
 }
 ```
+### 算法分析1
+效率太低，时间复杂度为O(n^2)
+
+---
+### 数学模型2
+![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_1_model_2.PNG)
+### 算法设计2
+```c
+#include<stdio.h>
+int main()
+{
+	int i, n, sign;
+	float sum, f;
+	printf("输入n值： ");
+	scanf_s("%d", &n);
+	f = 1;
+	sign = 1;
+	sum = 1;
+	if (n != 1) {
+		for (i = 2; i <= n; i++)
+		{
+			f = f / ((2 * i - 2) * (2 * i - 1));
+			sign = -sign;
+			sum = sum + sign * f;
+		}
+	}
+	printf("当n = %d时，公式结果为：%.10f\n", n, sum);
+}
+
+```
+### 算法分析2
+时间复杂度为O(n)

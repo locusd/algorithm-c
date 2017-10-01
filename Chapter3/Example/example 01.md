@@ -2,7 +2,7 @@
 ![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_1_formula.PNG)
 
 ### 数学模型1
-![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_1_model.PNG)
+![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_1_model_1.PNG)
 ### 算法设计1
 ```c
 #include<stdio.h>

@@ -14,7 +14,7 @@ int main()
         {
             printf("%3d it's factors are %d", i, 1);
             for (j = 0;j < k;j++)
-            printf(", %d", a[j]);
+                printf(", %d", a[j]);
             printf("\n");
         }
     return 0;

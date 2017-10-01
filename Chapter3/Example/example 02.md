@@ -28,9 +28,9 @@ int IsPerNum(int i)
     {
         if (i%j == 0)
         {
-        sum = sum + j;
-        a[k] = j;
-        k++;
+            sum = sum + j;
+            a[k] = j;
+            k++;
         }
     }
     if (sum == i) return 1;

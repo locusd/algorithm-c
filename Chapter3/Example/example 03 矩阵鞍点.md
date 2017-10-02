@@ -41,16 +41,16 @@ int main()
 void readMtr(int a[][n], int x)
 {
     int i, j;
-    printf("输入%d*%d矩阵: ", m, n);
-    for (i = 0;i < m;i++)
+    printf("输入%d*%d矩阵: ", x, n);
+    for (i = 0;i < x;i++)
         for (j = 0;j < n;j++)
             scanf_s("%d", &a[i][j]);
 }
 void printfMtr(int a[][n], int x)
 {
     int i, j;
-    printf("输出%d*%d矩阵: \n", m, n);
-    for (i = 0;i < m;i++) 
+    printf("输出%d*%d矩阵: \n", x, n);
+    for (i = 0;i < x;i++) 
     {
         for (j = 0;j < n;j++)
             printf("%3d ", a[i][j]);

@@ -13,11 +13,11 @@ int main()
     printf("从高位到低位逐位输出：");
     for(i=0;n>=10;i++)
     {
-        a[i] = n % 10;              //用数组保存结果，再逆向输出
+        a[i] = n % 10;              //用数组保存结果
         n /= 10;
     }
     a[i] = n;
-    for (j = i;j >= 0;j--)
+    for (j = i;j >= 0;j--)          //再逆向输出
         printf("%d ", a[j]);
     printf("\n");
     return 0;

@@ -6,9 +6,9 @@
 #include<math.h>
 int main()
 {
-    int i, j, m, n, r;
+    int i, j, m, n;
     long a[256], b, d;
-    double s=0;
+    double s = 0;
     printf("输入阶乘n值: ");
     scanf_s("%d", &n);
     for (i = 1;i <= n;i++)
@@ -36,16 +36,8 @@ int main()
             a[j] = d;
         }
     }
-    for (i = m;i >= 1;i--)          //求结果最高位所在元素下标
-    {
-        if (a[i] == 0) continue;
-        else {
-            r = i;
-            break;
-        }
-    }
-    printf("\nn != %ld ", a[r]);
-    for (i = r - 1;i >= 1;i--)
+    printf("\n%d != %ld ", n, a[m]);
+    for (i = m - 1;i >= 1;i--)
     {
         if (a[i] > 99999)
             printf("%ld ", a[i]);

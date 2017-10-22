@@ -5,7 +5,8 @@ n = 3 输出：
 n = 4 输出：
 ![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_21_matrix_2.PNG)
 ### 问题分析1
-n = 4时，可以把把矩阵最外层（1-12）当作第0层，（12-16）当作第1层，以此类推。以层作为外循环。分别计算一层左侧，下侧，右侧，上侧的数组值。
+n = 4时，可以把把矩阵最外层（1-12）当作第0层，（12-16）当作第1层，以此类推。以层作为外循环。分别计算一层左侧，下侧，右侧，上侧的数组值。  
+
 ![](https://raw.githubusercontent.com/locusd/algorithm-c/master/images/example/3_21_matrix_analysis_1.PNG)
 
 ### 算法设计1
